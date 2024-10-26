@@ -1,9 +1,9 @@
 <?php
 // Enable error reporting for debugging
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-require_once 'UrlShortenerService.php';
+require_once 'src/UrlShortenerService.php';
 
 // Get the short code from the URL parameters
 $shortCode = isset($_GET['code']) ? $_GET['code'] : '';

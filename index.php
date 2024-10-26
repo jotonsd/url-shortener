@@ -1,5 +1,5 @@
 <?php
-require_once 'UrlShortenerService.php';
+require_once 'src/UrlShortenerService.php';
 
 $message = '';
 $shortUrl = '';
