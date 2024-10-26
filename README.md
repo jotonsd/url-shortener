@@ -29,15 +29,28 @@ private $userName = "your_database_user";
 private $userPassword = "your_database_password";
 ```
 
-### 3. Run the project on port 8000
+### 3. Install dependencies
+Run this below command
+```
+composer install
+```
+
+### 4. Run the project on port 8000
 Run this below command
 
 ```
 php -S localhost:8000
 ```
-### 4. To run test cases
+### 5. To run test cases
+
 ```
  vendor/bin/phpunit --bootstrap vendor/autoload.php tests/UrlShortenerServiceTest.php
+```
+
+To check the live preview please visit
+
+```
+ https://url-shortener.jotonsutradhar.com/
 ```
 
 **Happy Coding, Thank you :smile:**
