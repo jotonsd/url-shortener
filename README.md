@@ -35,5 +35,9 @@ Run this below command
 ```
 php -S localhost:8000
 ```
+### 4. To run test cases
+```
+ vendor/bin/phpunit --bootstrap vendor/autoload.php tests/UrlShortenerServiceTest.php
+```
 
 **Happy Coding, Thank you :smile:**
