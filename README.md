@@ -33,7 +33,7 @@ private $userPassword = "your_database_password";
 Run this below command
 
 ```
-php -S localhost:8000 -t public
+php -S localhost:8000
 ```
 
 **Happy Coding, Thank you :smile:**
