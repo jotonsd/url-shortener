@@ -8,14 +8,19 @@ class UrlShortenerService
     private const SHORT_URL_LENGTH = 6;
     private const MAX_ATTEMPTS = 5;
 
+    private $host = "localhost";
+    private $dbName = "sheba_assessment";
+    private $userName = "root";
+    private $userPassword = "";
+
     public function __construct()
     {
         // Initialize database connection
         try {
             $this->pdo = new \PDO(
-                "mysql:host=localhost;dbname=sheba_assessment",
-                "root",
-                "",
+                "mysql:host=$this->host;dbname=$this->dbName",
+                $this->userName,
+                $this->userPassword,
                 [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]
             );
 
